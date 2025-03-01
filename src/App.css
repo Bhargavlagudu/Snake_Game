@@ -1,0 +1,96 @@
+/* body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #353c4e;
+  align-items:center;
+}
+
+h1 {
+  align-items:center;
+  color: rgb(240, 231, 239);
+  font-size: 36px;
+}
+
+p {
+  color: rgb(158, 85, 171);
+  font-size: 18px;
+}
+
+.board {
+  display: grid;
+  gap: 1px;
+}
+
+button:hover {
+  background-color: #cfdbcf;
+} */
+/* App.css */
+
+/* Center the entire application */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #363335;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  text-align: center; /* Center-align headings and paragraphs */
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center-align horizontally */
+  gap: 20px; /* Add spacing between elements */
+}
+
+/* Game board styling */
+.board {
+  display: grid;
+  grid-template-columns: repeat(20, 20px);
+  grid-gap: 1px; /* Add small gaps between cells */
+  background-color: #333;
+  border: 2px solid #000;
+}
+
+/* Cell styles */
+.board div {
+  width: 20px;
+  height: 20px;
+  background-color: rgb(26, 24, 24);
+}
+
+/* Food */
+.board div.food {
+  background-color: red;
+}
+
+/* Snake */
+.board div.snake {
+  background-color: green;
+}
+
+/* Game Over styles */
+.game-over h1 {
+  color: #a83636;
+}
+p{
+  color:rgb(151, 5, 39)
+}
+h2{
+  color:rgb(148, 112, 166)
+}
+.game-over button {
+  padding: 10px 20px;
+  background-color: #4740cf;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
